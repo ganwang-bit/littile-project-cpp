@@ -1,0 +1,16 @@
+#ifndef _TEACHERHEAD_H_
+#define _TEACHERHEAD_H_
+#include"class person.h"
+#include<windows.h>
+#include<stdlib.h>
+#define FILENAME1 "教师基本信息表.txt"
+#define FILENAME2 "教师工资信息表.txt"
+#define Input '1'
+#define Input '2'
+#define Input '3'
+#define Input '1'
+#define Input '1'
+char menu();
+void sys();
+bool isexit();
+#endif // _TEACHERHEAD_H_

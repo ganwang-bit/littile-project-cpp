@@ -1,0 +1,76 @@
+#ifndef CLASS_PERSON_H_INCLUDED
+#define CLASS_PERSON_H_INCLUDED
+#include<iostream>
+using namespace std;
+#include<string>
+class Person;
+class Money
+{
+public:
+    Money(string id,int monthtmp);
+    ~Money();
+    Money*&getend();
+    Money&operator=(Money&tmp);
+    friend Person;
+    friend bool panduanmonth(int monthtmp,Money*tmp);
+    friend void input2();
+private:
+    string ID;
+    int month;
+    float base;
+    float jin;
+    float should;
+    float fact;
+    Money*next;
+};
+class Person
+{
+public:
+    Person(string tmp);
+    ~Person();
+    Person*&getend();
+    Person&operator=(Person&p);
+    friend bool panduan(string Id);
+    friend void input1();
+    friend void input2();
+    friend Money;
+    void showall();
+private:
+    string id;
+    string name;
+    string school;
+    string job;
+    Money*money;
+    Person *next;
+};
+class Menu
+{
+public:
+    virtual void menu();
+    virtual char choose();
+};
+class Menuinput:public Menu
+{
+public:
+    virtual void menu();
+    virtual char choose();
+};
+class Menuchange:public Menu
+{
+public:
+    virtual void menu();
+    virtual char choose();
+};
+class Menusearch:public Menu
+{
+public:
+    virtual void menu();
+    virtual char choose();
+};
+class Menuanaly:public Menu
+{
+public:
+    virtual void menu();
+    virtual char choose();
+};
+#endif // CLASS_PERSON_H_INCLUDED

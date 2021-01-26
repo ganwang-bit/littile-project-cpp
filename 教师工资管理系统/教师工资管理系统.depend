@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1611593259 source:c:\users\1\desktop\c语言\教师工资管理系统\main.cpp
+	"teacherhead.h"
+
+1611594862 c:\users\1\desktop\c语言\教师工资管理系统\teacherhead.h
+	"class person.h"
+	<iomanip>
+	<fstream>
+	<windows.h>
+	<stdlib.h>
+
+1611594862 c:\users\1\desktop\c语言\教师工资管理系统\class person.h
+	<iostream>
+	<string>
+
+1611592541 source:c:\users\1\desktop\c语言\教师工资管理系统\class person.cpp
+	"teacherhead.h"
+
+1611592192 source:c:\users\1\desktop\c语言\教师工资管理系统\function.cpp
+	"teacherhead.h"
+

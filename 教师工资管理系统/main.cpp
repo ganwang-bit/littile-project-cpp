@@ -1,0 +1,44 @@
+#include"teacherhead.h"
+int main()
+{
+    bool exit=false;
+    Menu m;
+    while(!exit)
+    {
+        char choose=menu(m);
+        Menuinput tmp1;
+        Menuchange tmp2;
+        Menusearch tmp3;
+        Menuanaly tmp4;
+        switch(choose)
+        {
+        case Input:
+            sys();
+            choose=menu(tmp1);
+            input(choose);
+            break;
+        case Change:
+            sys();
+            choose=menu(tmp2);
+            change(choose);
+            break;
+        case Search:
+            sys();
+            choose=menu(tmp3);
+            research(choose);
+            break;
+        case Exit:
+            if(isexit())
+                {
+                    cout<<"程序将退出"<<endl;
+                    exit=true;
+                }
+            break;
+        default:
+            cout<<"请正确输入1~5之间的数字:";
+            break;
+        }
+        sys();
+    }
+    return 0;
+}
